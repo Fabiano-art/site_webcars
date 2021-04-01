@@ -3,136 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Web Cars | página inicial</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <header>
-        <div id="logoPagina">
-            <h1><u>Web Car</u></h1>
+        <div class="cabecalho">
+
+            <div>
+                <img src="img/logotipo.jpg" alt="logotipo web cars" title="logotipo web cars" width="120px">
+
+            </div>
+
+            <nav>
+                <ul class="menu-button">
+                    <li class="inline-block">Sedan</li>
+                    <li class="inline-block">Hatchback</li>
+                    <li class="inline-block">SUV</li>
+                    <li class="inline-block">Picape</li>
+                </ul>
+            </nav>
+            
         </div>
-        <nav class="menu">
-            <ul>
-                <li>Teste</li>
-                <li>Teste</li>
-                <li>Teste</li>
-                <li>Teste</li>
-            </ul>
-        </nav>
+
     </header>
-
-    <section id="secao">
-        <div class="divPrincipal">
-
-            <div class="tituloPagina">
-                    <h1>Venha conhecer a <span id="nomeEmpresa">Web Cars</span></h1>
-            </div>
-
-            <div class="imagemCarro">
-                <img src="./img/carroPrincipal2.jpg" alt="Imagem de um carro preto" width="800px">
-            </div>
-
-            <div class="descricaoEmpresa">
-                <div>
-                    <h1 id="tituloDescricao">Nós da  <span id="nomeEmpresa">Web Cars..</span></h1>
-                </div>
-                <div>
-                    <p id="paragrafoDescricao">
-                        Prezamos pelo atendimento ao cliente, gostamos de bem-atender para atender sempre.
-                        Estamos a mais de 10 anos no mercado de automotivos, e buscamos nos estabilizar sempre mais.
-                        Trabalhamos com os mais variados tipos de veiculos, desde motocicletas até mesmo caminhões
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
     
 </body>
-
-<style>
-
-    #menuRodape {
-        list-style:none;
-    }
-
-    #paragrafoDescricao {
-        font-size: 25px;
-    }
-
-    #tituloDescricao {
-        font-size: 30px;
-    }
-
-    .descricaoEmpresa {
-        display: block;
-        margin-bottom: 60px;
-    }
-
-    #nomeEmpresa {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        color: red;
-        font-size: 50px;
-    }
-
-    .tituloPagina {
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .divPrincipal {
-        padding-top: 100px;
-    }
-
-    .imagemCarro {
-        display: inline-block;
-    }
-
-    header {
-        width: 100%;
-        display: block;
-        display: inline;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: rgb(196, 9, 9);
-        padding-bottom: 0px;
-    }
-    header > div, nav {
-        color: white;
-        padding-left: 50px;
-        font-size: 20px;
-        display: inline-block;
-    }
-
-    .menu > ul > li:hover {
-        background-color: rgb(247, 0, 0);
-    }
-    
-    .menu {
-        padding-left: 600px;
-    }
-
-    .menu > ul {
-        background-color: none;
-        list-style:none;
-
-    }
-
-    .menu > ul > li {
-        padding-right:30px;
-        display: inline;
-        font-size: 25px;
-        font-weight: bold;
-        cursor: pointer;
-        padding: 20px
-    }
-
-    #secao {
-        margin: auto;
-        width: 60%;
-    }
-
-</style>
 
 </html>
