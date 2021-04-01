@@ -66,6 +66,7 @@ section {
     flex-wrap: wrap;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 50px;
 }
 
 .apresentacao-carro {
@@ -85,8 +86,8 @@ section {
     background-color: rgba(207, 207, 207, 0.664);
 }
 
-p {
-    margin-left: 10px;
+.apresentacao-carro p {
+    margin-left: 25px;
 }
 
 .botao-veja-mais {
@@ -96,4 +97,20 @@ p {
     background-color: rgb(253, 21, 21);
     color: white;
     cursor: pointer;
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(68, 68, 68);
+    
+}
+
+.apresentacao-paragrafo {
+    color:rgba(0, 0, 0, 0.952);
+    font-size: 20px;
+}
+
+footer {
+    height: 200px;
+    background-color: rgba(41, 39, 39, 0.959);
 }
