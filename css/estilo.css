@@ -38,7 +38,18 @@ header {
     display: inline-block;
 }
 
-li:hover {
+a {
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px white solid;
+}
+
+.menu-button li:hover {
     border-bottom: 2px white solid;
 }
 
@@ -50,10 +61,6 @@ li:hover {
 .interno {
     margin-left: 10%;
     margin-right: 10%; 
-}
-
-.apresentacao {
-    
 }
 
 .intro {
@@ -72,7 +79,7 @@ section {
 .apresentacao-carro {
     display: flex;
     flex-direction: column;
-    /* border: 2px solid black; */
+    padding: 10px 20px 10px 20px;
     width: 45%;
     height: 500px;
     align-items: center;
@@ -93,10 +100,15 @@ section {
 .botao-veja-mais {
     width: 200px;
     height: 35px;
-    margin-top: 50px;
+    margin-top: 10%;
     background-color: rgb(253, 21, 21);
     color: white;
     cursor: pointer;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.botao-veja-mais:hover {
+    background-color: rgb(165, 1, 1);
 }
 
 h1 {
@@ -111,6 +123,21 @@ h1 {
 }
 
 footer {
-    height: 200px;
+    height: 250px;
     background-color: rgba(41, 39, 39, 0.959);
+}
+
+.rodape {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.lista-rodape li {
+    color: white;
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: 20px;
 }
