@@ -6,27 +6,28 @@ header {
     width: 100%;
     height: 100px;
     background-color: rgba(41, 39, 39, 0.959);
+    position: fixed;
 }
 
 .cabecalho {
     margin-left: 10%;
     margin-right: 10%;
-    padding-top: 20px;
+    padding-top: 20px;    
+}
+
+.conteiner-flex {
 
     /*==== 
         João Cláudio
      =====*/
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: row;
+ 
+     /*=========*/
 
-    /*=========*/
-}
-
-.inline-block {
-    display: inline-block;
 }
 
 .menu-button > li {
@@ -34,15 +35,65 @@ header {
     margin-left: 30px;
     color: white;
     cursor: pointer;
+    display: inline-block;
 }
 
 li:hover {
     border-bottom: 2px white solid;
 }
 
-.barra-pesquisa {
+.banner {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.interno {
+    margin-left: 10%;
+    margin-right: 10%; 
+}
+
+.apresentacao {
+    
+}
+
+.intro {
+    font-size: 20px;
+}
+
+section {
+    margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.apresentacao-carro {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    width: 45%;
+    height: 500px;
     align-items: center;
-    flex-direction: row;
+
+    margin: 5px;
+    border: solid 1px #CCC;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.apresentacao-carro:hover {
+    background-color: rgba(207, 207, 207, 0.664);
+}
+
+p {
+    margin-left: 10px;
+}
+
+.botao-veja-mais {
+    width: 200px;
+    height: 35px;
+    margin-top: 50px;
+    background-color: rgb(253, 21, 21);
+    color: white;
+    cursor: pointer;
 }
