@@ -52,3 +52,95 @@ a:hover {
 .menu-button li:hover {
     border-bottom: 2px white solid;
 }
+
+h1 {
+    font-size: 40px;
+    color: rgb(68, 68, 68);
+    
+}
+
+.intro {
+    height: 500px;
+    width: 100%;  
+    border-bottom: 2px red solid;  
+}
+
+section {
+    top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.intro div {
+    width: 100%;
+}
+
+.div-interno {
+    padding: 20px;
+    height: 80%;
+    width: 100%;
+}
+
+.centralizado {
+    display: flex;
+    align-items: center;
+}
+
+.card-carro {
+    margin: 10px;
+    border: solid 1px #CCC;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+
+    padding: 10px;
+    height: 85%;
+    width: 200px;
+
+    -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+    display: inline-block;
+}
+
+.card-carro:hover {
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+    z-index: 1;
+}
+
+.slider {
+    display: flex;
+    margin-top: 50px;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 100px;
+    flex-flow: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+footer {
+    height: 250px;
+    background-color: rgba(41, 39, 39, 0.959);
+}
+
+.rodape {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.lista-rodape li {
+    color: white;
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.atributos-list {
+    list-style: none;
+    padding: 0;
+}
