@@ -75,12 +75,6 @@ section {
     width: 100%;
 }
 
-.div-interno {
-    padding: 20px;
-    height: 80%;
-    width: 100%;
-}
-
 .centralizado {
     display: flex;
     align-items: center;

@@ -10,33 +10,17 @@
 
 </head>
 <body>
-    <header>
-        <div class="cabecalho conteiner-flex">
+    
+    <?php
 
-            <div>
-                <a href="/index.html">
-                    <img src="img/logotipo.jpg" alt="logotipo web cars" title="logotipo web cars" width="120px">
-                </a>
-                
-            </div>
+        require_once('./componentes/header.html');
 
-            <nav>
-                <ul class="menu-button">
-                    <li><a href="carro/descricao.php?type=sedan">Sedan</a> </li>
-                    <li><a href="carro/descricao.php?type=hatch">Hatchback</a> </li>
-                    <li> <a href="carro/descricao.php?type=suv">SUV</a></li>
-                    <li> <a href="carro/descricao.php?type=pickup">Pickup</a></li>
-                </ul>
-            </nav>
-            
-        </div>
-
-    </header>
+    ?>
 
     <div class="banner">
         <img src="img/carroPrincipal2.jpg" alt="Banner carro" title="Banner carro" width="100%">
     </div>
-    
+
     <div class="apresentacao">
 
         <div class="interno">
@@ -142,5 +126,6 @@
 </body>
 
 <script type="text/javascript" src="js/cabecalhoRetratil.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 </html>

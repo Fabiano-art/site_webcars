@@ -2,12 +2,10 @@
 
     $tipo = $_GET["type"];
 
-    $con = mysqli_connect('localhost' , 'root', '');
-    $resultado = mysqli_select_db($con, 'web_cars_db');
+    $con = mysqli_connect('sql205.epizy.com' , 'epiz_28294967', 'smdzbudccFatuAc');
+    $resultado = mysqli_select_db($con, 'epiz_28294967_web_cars_db');
 
-    $sql = "select nome, foto, preco, potencia, combustivel, titulo, descricao, banner_principal" .
-    " from pagina " .
-    " join carro on pagina.id_pagina = carro.pagina_id_fk where carro.tipo = " . "'{$tipo}'";
+    $sql = "select titulo, descricao, banner_principal from pagina where titulo = '$tipo'";
 
     $registros = mysqli_query($con, $sql) or die(mysqli_error($con) . "<br>" . $sql);
 
@@ -22,17 +20,8 @@
         $DescricaoPagina = $dados['descricao'];
         $banner = $dados['banner_principal'];
 
-        // $nome = $dados['nome'];
-        // $pathFoto = $dados['foto'];
-        // $preco = $dados['preco'];
-        // $potencia = $dados['potencia'];
-        // $combustivel = $dados['combustivel'];
-
         $cont++;
-        
     }
-        
-    
     
 ?>
 
@@ -40,34 +29,17 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Web Cars&reg; | Sedan</title>
+    <title>Web Cars&reg; | <?php echo $tituloPagina; ?></title>
     <link rel="stylesheet" href="../css/carro.css">
+    <link rel="sortcut icon" href="../img/logotipo.jpg" type="image/jpg" />
 </head>
 
 <body>
 
-    <header>
-        <div class="cabecalho conteiner-flex">
+    <?php
+        require('../componentes/header.html');
+    ?>
 
-            <div>
-                <a href="../index.html">
-                    <img src="../img/logotipo.jpg" alt="logotipo web cars" title="logotipo web cars" width="120px">
-                </a>
-                
-            </div>
-
-            <nav>
-                <ul class="menu-button">
-                    <li><a href="/descricao.php?type=sedan">Sedan</a> </li>
-                    <li><a href="./descricao.php?type=hatch">Hatchback</a> </li>
-                    <li> <a href="./descricao.php?type=suv">SUV</a></li>
-                    <li> <a href="./descricao.php?type=pickup">Pickup</a></li>
-                </ul>
-            </nav>
-            
-        </div>
-
-    </header>
     <div style="height: 100px">
         
     </div>
@@ -85,11 +57,11 @@
 
             <div class="div-interno centralizado">
                 <img src=<?php echo $banner; ?> 
-                alt="Sedan" width="500px">
+                alt="Sedan" width="100%">
             </div>
         </div>
 
-        <h1>Abaixo listamos os principais sedans no mercado</h1>
+        <h1>Abaixo listamos os principais <?php echo $tituloPagina?> no mercado</h1>
 
         <div class="slider conteiner-flex">
 
@@ -97,7 +69,10 @@
             <?php
                 $cont = 0;
 
+                $sql = "select nome, foto, preco, potencia, combustivel from carro where tipo = '$tipo'";
                 $registros = mysqli_query($con, $sql) or die(mysqli_error($con) . "<br>" . $sql);
+
+                $linhas = mysqli_num_rows($registros);
 
                 while($cont < $linhas){
 
@@ -148,37 +123,11 @@
         </section>
 
 
-    <footer>
-        <div class="rodape conteiner-flex">
-            <div>
-                <ul class="lista-rodape">
-                    <li><h2>Fontes</h2></li>
-                    <li>Imagens: <a href="https://pixabay.com/pt/">Pixabay</a> </li>
-                </ul>
-            </div>
+    <?php
 
-            <div>
-                <ul class="lista-rodape">
-                    <li><h2>Repositório do projeto</h2></li>
-                    <li> 
-                        <a href="https://github.com/Fabiano-art/site_webcars">
-                            https://github.com/Fabiano-art/site_webcars
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        require('../componentes/footer.html');
 
-            <div>
-                <ul class="lista-rodape">
-                    <li><h2>Desenvolvedor: Fabiano Guimarães</h2></li>
-                    <li> <a href="mailto:fabio.dub@outlook.com">Enviar email</a></li>
-                    <li> <a href="https://github.com/Fabiano-art">Acesse Github</a></li>
-                    <li> <a href="https://www.linkedin.com/in/fabiano-guimar%C3%A3es-3902a7202/">Acesse Linkedin</a> </li>
-                </ul>
-            </div>
-
-        </div>
-    </footer>
+    ?>
 
 </body>
 
