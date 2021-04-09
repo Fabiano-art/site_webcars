@@ -5,8 +5,7 @@
     <title>Web Cars&reg; | página inicial</title>
 
     <link rel="stylesheet" href="css/home.css">
-
-    
+    <link rel="sortcut icon" href="./img/logotipo.jpg" type="image/jpg" />
 
 </head>
 <body>
@@ -24,7 +23,7 @@
     <div class="apresentacao">
 
         <div class="interno">
-            <h1>Maior comodidade...</h1>
+            <h1>Maior comodidade</h1>
             <p class="apresentacao-paragrafo">
                 Na Web Cars&reg;, damos uma visão geral de cada tipo de carro para que você acerte na escolha
             </p>
@@ -44,7 +43,9 @@
                     Os sedans (berlina, tursimo ou carro de três volumes) 
                 </p>
                 
-                <a href="carro/sedan.html"><button class="botao-veja-mais">Veja mais detalhes</button></a>
+                <a href="http://fabiano-developer.infinityfreeapp.com/carro/descricao.php?type=sedan">
+                    <button class="botao-veja-mais">Veja mais detalhes</button>
+                </a>
 
         </div>
 
@@ -59,7 +60,9 @@
                     Conheça os Hatchbacks 
                 </p>
                 
-                <a href="hatch/sedan.html"><button class="botao-veja-mais">Veja mais detalhes</button></a>
+                <a href="http://fabiano-developer.infinityfreeapp.com/carro/descricao.php?type=hatch">
+                    <button class="botao-veja-mais">Veja mais detalhes</button>
+                </a>
         </div>
 
         <div class="apresentacao-carro">
@@ -73,7 +76,9 @@
                     design sofisticado e muito estilo
                 </p>
                 
-                <a href="carro/suv.html"><button class="botao-veja-mais">Veja mais detalhes</button></a>
+                <a href="http://fabiano-developer.infinityfreeapp.com/carro/descricao.php?type=suv">
+                    <button class="botao-veja-mais">Veja mais detalhes</button>
+                </a>
         </div>
 
         <div class="apresentacao-carro">
@@ -87,45 +92,18 @@
                     Conheça toda a versalidade das pickups
                 </p>
                 
-                <a href="carro/pickup.html"><button class="botao-veja-mais">Veja mais detalhes</button></a>
+                <a href="http://fabiano-developer.infinityfreeapp.com/carro/descricao.php?type=pickup">
+                    <button class="botao-veja-mais">Veja mais detalhes</button>
+                </a>
         </div>
     </section>
 
-    <footer>
-        <div class="rodape conteiner-flex">
-            <div>
-                <ul class="lista-rodape">
-                    <li><h2>Fontes</h2></li>
-                    <li>Imagens: <a href="https://pixabay.com/pt/">Pixabay</a> </li>
-                </ul>
-            </div>
-
-            <div>
-                <ul class="lista-rodape">
-                    <li><h2>Repositório do projeto</h2></li>
-                    <li> 
-                        <a href="https://github.com/Fabiano-art/site_webcars">
-                            https://github.com/Fabiano-art/site_webcars
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <ul class="lista-rodape">
-                    <li><h2>Desenvolvedor: Fabiano Guimarães</h2></li>
-                    <li> <a href="mailto:fabio.dub@outlook.com">Enviar email</a></li>
-                    <li> <a href="https://github.com/Fabiano-art">Acesse Github</a></li>
-                    <li> <a href="https://www.linkedin.com/in/fabiano-guimar%C3%A3es-3902a7202/">Acesse Linkedin</a> </li>
-                </ul>
-            </div>
-
-        </div>
-    </footer>
+    <?php
+        require('./componentes/footer.html');
+    ?>
 
 </body>
 
 <script type="text/javascript" src="js/cabecalhoRetratil.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
 
 </html>
