@@ -69,8 +69,6 @@ a:hover {
 
 section {
     margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 50px;
@@ -79,14 +77,15 @@ section {
 .apresentacao-carro {
     display: flex;
     flex-direction: column;
-    padding: 10px 20px 10px 20px;
-    width: 45%;
-    height: 500px;
+    padding: 20px;
+    /* width: 45%; */
+    /* height: 500px; */
     align-items: center;
 
     margin: 5px;
     border: solid 1px #CCC;
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 
 }
 
