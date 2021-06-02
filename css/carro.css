@@ -75,12 +75,6 @@ section {
     width: 100%;
 }
 
-.div-interno {
-    padding: 20px;
-    height: 80%;
-    width: 100%;
-}
-
 .centralizado {
     display: flex;
     align-items: center;
@@ -101,6 +95,10 @@ section {
     
     display: flex;
     align-items: center;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 843d0aedf78f5ee95b854812daf2926ebafb7f69
     flex-direction: column;
 }
 
@@ -118,6 +116,10 @@ section {
     margin-bottom: 100px;
 
     display: flex;
+<<<<<<< HEAD
+=======
+    justify-content: flex-start;
+>>>>>>> 843d0aedf78f5ee95b854812daf2926ebafb7f69
     
     /* flex-flow: row;
     overflow-x: scroll;
@@ -156,4 +158,8 @@ tr {
 .apresentacao-paragrafo {
     color:rgba(0, 0, 0, 0.952);
     font-size: 20px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 843d0aedf78f5ee95b854812daf2926ebafb7f69
